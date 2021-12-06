@@ -1,6 +1,6 @@
 ## To Deploy App in Google Cloud Platform (GCP)
 
-In this tutorial it is assumed that you have created GCP account already.
+In this tutorial it is assumed that you have created GCP account and project already.
 
 
 
@@ -64,12 +64,12 @@ Inside the folder clone repository of the API from github:
 
 ```bash
 
-git clone <link>
-cd <repo-name>
+git clone https://github.com/UP957155/signOff2Repo.git
+cd signOff2Repo
 
 ```
 
-Download all dependencies:
+Install all dependencies:
 
 ```bash
 
@@ -100,12 +100,12 @@ nano app.yaml
 
 ```
 
-Inside the file you can set up service name you want. Below is example. You should be ok with runtime nodejs14:
+Inside the file you can set up service name you want. Below is example you need to copy into the file. You should be ok with runtime nodejs14:
 
 ```yaml
 
 runtime: nodejs14
-service: myProject
+service: myproject
 
 ```
 
@@ -121,7 +121,7 @@ gcloud app deploy
 
 ```
 
-After the API is be deployed run this command to get the API's URL:
+After the API is deployed run this command to get the API's URL:
 
 ```bash
 
@@ -129,4 +129,4 @@ gcloud app browse -s <your-service-name>
 
 ```
 
-Open the URL in the browser and in the API UI run the test. Click the 'run automatic tests now' button. The test have to passed.
+Open the URL in the browser and in the API UI run the test. Click the 'run automatic tests now' button. The test has to pass.
