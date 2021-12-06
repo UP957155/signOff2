@@ -2,11 +2,13 @@
 
 In this tutorial it is assumed that you have created GCP account and project already.
 
+The API is already deployed here: https://myproject-dot-sse2021-330922.ew.r.appspot.com/
 
+If you want to deploy your own follow steps below.
 
 **Create VM instance**
 
-In GCP go to Dropdown Menu (Upper left corner) > Compute Engine > VM instances.
+In GCP go to Dropdown Menu (upper left corner) > Compute Engine > VM instances.
 In VM instances menu go to CREATE INSTANCE.
 You need to set up this properties for the instance: 
 
@@ -51,7 +53,7 @@ sudo apt-get install -y nodejs git
 
 **Clone repository of the API**
 
-Inside the folder clone repository of the API from github:
+Inside the instance clone repository of the API from github:
 
 ```bash
 
@@ -83,7 +85,7 @@ If you can see in the browser that API is successfully running then stop the API
 
 **Prepare API to be deployed**
 
-In the shell open app.yaml file:
+In the shell inside the signOffRepo folder create app.yaml file:
 
 ```bash
 
