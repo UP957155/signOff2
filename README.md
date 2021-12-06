@@ -51,15 +51,6 @@ sudo apt-get install -y nodejs git
 
 **Clone repository of the API**
 
-You should have nodejs and git installed now. In your instance create new folder 'myProject' and go to into the folder:
-
-```bash
-
-mkdir myProject
-cd myProject
-
-```
-
 Inside the folder clone repository of the API from github:
 
 ```bash
