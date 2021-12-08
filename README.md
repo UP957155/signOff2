@@ -2,7 +2,7 @@
 
 In this tutorial it is assumed that you have created GCP account and project already.
 
-The API is already deployed here: https://myproject-dot-sse2021-330922.ew.r.appspot.com/
+The API is already deployed here: https://myproject1-dot-sse2021-330922.ew.r.appspot.com/
 
 If you want to deploy your own follow steps below.
 
