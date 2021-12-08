@@ -22,7 +22,7 @@ api.post('/api/:name', bodyParser.text(), async(req, res) => {
     try{
         let db = await ds.list(req.params.name)
         //check if req.body content is number and convert it.
-        let number = (!isNaN(parseInt(req.body))) ? parseInt(req.body) : (!isNaN(parseFloat(req.body))) ? parseFloat(req.body) : 0
+        let number = (!isNaN(parseFloat(req.body))) ? parseFloat(req.body) : 0
         //check if name already exists in database.
         if(db.length !== 0){
                     let data = {
@@ -66,7 +66,7 @@ api.get('/api/:name', bodyParser.text(), async(req, res) => {
 api.put('/api/:name', bodyParser.text(), async(req, res) => {
     try{
         //check if req.body content is number and convert it.
-        let number = (!isNaN(parseInt(req.body))) ? parseInt(req.body) : (!isNaN(parseFloat(req.body))) ? parseFloat(req.body) : 0
+        let number = (!isNaN(parseFloat(req.body))) ? parseFloat(req.body) : 0
                     let data = {
                         name: req.params.name,
                         val: JSON.stringify(number)
